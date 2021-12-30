@@ -8,10 +8,10 @@
 using namespace std;
 
 template<class T>
-void print_list_detailed(link_list<T>);
+void print_list_detailed(link_list<T>&);
 
 template<class T>
-void print_list(link_list<T> l);
+void print_list(link_list<T>& l);
 
 int main(){
     link_list<int> l;
@@ -67,7 +67,7 @@ int main(){
 }
 
 template<class T>
-void print_list_detailed(link_list<T> l)
+void print_list_detailed(link_list<T>& l)
 {
     auto iter = l.first();
 
@@ -82,7 +82,7 @@ void print_list_detailed(link_list<T> l)
 }
 
 template<class T>
-void print_list(link_list<T> l)
+void print_list(link_list<T>& l)
 {
     auto iter = l.first();
 
